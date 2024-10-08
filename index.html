@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      .circle {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+        position: absolute;
+        border-radius: 15px;             
+      }
+      </style>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <style>
+        
+    
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+      </style>
+    <link rel="stylesheet" href="output.css"/>
+    <title>Portfolio</title>   
+</head>
+<body class="bg-black text-white" >
+  <!-- -----------------------HOME PAGE--------------------------------------------->
+   <section class="flex flex-col justify-between h-screen">
+   <!-- <script type="text/javascript">
+
+      document.onmousemove = animateCircles;
+  
+      var colors = ['#ccc','#6cf','#eba13a'];
+  
+      function animateCircles (event) {
+        let circle = document.createElement("div");
+        circle.setAttribute("class", "circle");
+        document.body.appendChild(circle);
+  
+        circle.style.left = event.clientX + 'px';
+        circle.style.top = event.clientY + 'px';
+  
+        var color = colors[Math.floor(Math.random() * colors.length)];
+        circle.style.borderColor = color;
+  
+        circle.style.transition = "all 0.5s linear 0s";
+  
+        circle.style.left = circle.offsetLeft - 20 + 'px';
+        circle.style.top = circle.offsetTop - 20 + 'px';
+  
+        circle.style.width = "50px";
+        circle.style.height = "50px";
+        circle.style.borderWidth = "5px";
+        circle.style.opacity = 0;
+        
+        setTimeout(function() {
+                  circle.remove();
+              }, 300);
+      }
+  
+  
+      </script>-->
+    <header class="flex items-center justify-between px-4 my-3 max-w-screen-xl mx-auto w-full ">
+        
+        <svg 
+        version="1.1" viewBox="0 0 2048 1592" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+<path transform="translate(0)" d="m0 0h2048v1592h-2048z"/>
+<path transform="translate(1128,234)" d="m0 0 3 1 14 26 17 28 14 25 12 21 17 29 14 24 16 28 14 24 10 18 15 25 24 42 15 26 16 27 10 18 15 26 12 20 16 28 28 48 16 28 28 48 14 25 14 22 3 5-1 3h-305l-4-4-13-21-14-24-16-28-30-52-16-27-14-25-10-17-60-104-13-23-12-20-2-4 1-5 12-17 10-18 13-23 10-17 14-24 10-18 14-24 15-26 8-14 15-26 14-24 12-22z" fill="#fff"/>
+<path transform="translate(916,603)" d="m0 0 4 4 13 25 26 44 14 25 16 27 11 19 13 23 19 32 10 18 15 26 12 20 1 5-13 21-9 16-12 20-3 6 139 1h359l3 3 14 29 15 25 16 27-1 3h-904l2-6 6-9 28-49 16-27 15-27 12-20 14-24 13-23 13-22 12-21 13-23 10-17 17-29 10-18 16-27 12-21 10-18 15-26 7-11z" fill="#fff"/>
+<path transform="translate(608,1124)" d="m0 0h208l106 1-1 5-10 15-14 24-14 25-12 21-15 25-13 23-15 26-13 22-13 23-17 29-10 17-6 10-2 2h-315l2-6 17-28 11-20 28-48 16-27 32-56 14-24 12-21 17-29 5-8z" fill="#fff"/>
+<path transform="translate(1556,1124)" d="m0 0h24l55 1 5 3 14 27 10 17 15 26 14 24 14 25 9 15 17 29 14 25 14 24 12 20 13 22 4 9-1 1h-299l-15-25-14-24-14-25-15-25-13-23-16-28-15-25-28-49-17-29-7-11v-2l2-1z" fill="#fff"/>
+        </svg>
+        <div class="flex gap-6">
+            <svg
+             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg>
+              <svg 
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>
+              <svg 
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+              </svg>
+              <svg
+               xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-moon-fill hidden" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+              </svg>
+           
+        </div>
+
+
+    </header>
+    <div class="flex -mt-10 relative">
+      
+      <div class="max-w-screen-xl px-4 w-full mx-auto">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="406" height="368" viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="absolute top-0 left-1/2 -translate-y-1/4 -translate-x-1/2  w-[300px] sm:w-[400px] h-auto md:w-[650px]">
+          <path d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109" stroke="#1F2667" stroke-opacity="0.9" stroke-width="10"/>
+          <path d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109" stroke="url(#paint0_linear)" stroke-width="10"/>
+          <defs>
+          <linearGradient id="paint0_linear" x1="205.549" y1="20.0169" x2="204.338" y2="342.461" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#1595B6"/>
+          <stop offset="1" stop-color="#1595B6" stop-opacity="0"/>
+          </linearGradient>
+          </defs>
+          </svg>
+        <div class="relative ml-6 md:ml-28">
+          <h1 class=" text-[48px] md:text-[64px] font-bold mr-16">Anupama</h1>
+
+        <p class="text-xl my-4 md:my-8 italic">Frontend Developer</p>
+        <button class="bg-[#1936db] px-4 py-2 rounded-lg font-bold
+         bg-gradient-to-tl from-[#6371c4] to-[#1936db] hover:scale-110 ease-in-out duration-100">
+         About Me
+        </button>
+        </div>
+        
+        
+</div>
+        <ul class="ml-auto mr-6 space-y-4 text-[#b0b2c3] absolute right-8">
+            <li class=" hover:text-white">
+                <a href="https://www.linkedin.com/in/anupama-rawat-980818242/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                      </svg>
+
+                </a>
+                </li>
+                <li class=" hover:text-white">
+                    <a href="https://github.com/Anupama2103">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                          </svg>
+                    </a>
+                </li>
+                  <li class=" hover:text-white">
+                    <a href="mailto:anupamarawat2002@gmail.com"  >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                          </svg>
+                    </a>
+                  </li>
+                  <li class=" hover:text-white">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+
+                    </a>
+                  </li>
+                 
+           
+        </ul>
+    </div>
+
+    <button class="bg-[#1936db] px-4 py-2 rounded-lg font-bold
+    bg-gradient-to-tl from-[#6371c4] to-[#1936db] hover:scale-110 ease-in-out duration-100 self-center mb-3">
+        Latest Works
+    </button>
+
+   </section>
+<!-- ----------------------EXTRA------------------------------------------->
+   <section class="max-w-screen-xl mx-auto px-4">
+    
+    <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            version="1.1"
+            x="0px"
+            y="0px"
+            width="44"
+            height="44"
+            viewBox="0 0 100 100"
+            class="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100"
+          >
+          
+            
+          </svg>
+        </button>
+      </div>
+    </section>
+  <!-- -----------------LATEST WORKS-------------------------------------->
+    <section class="max-w-screen-xl mx-auto px-4 relative pb-4 sm:pb-16">
+      <h2 class="text-[40px] font-bold px-4 py-2 w-max mx-auto text-center  text-[#1280a4]">
+        Latest Work
+      </h2>
+      <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative">
+        <a href="#" 
+        class="flex w-full relative justify-center sm:justify-start">
+        
+          <img
+            class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./icons/projectimages/Group 1 (1).webp"
+            alt=""
+          />
+        </a>
+        <div class="w-full ">
+          <h3 class="text-[#f0ee73] font-bold text-2xl md:text-4xl">Hospital Management System</h3>
+          <span class="text-[#f0ee73] text-base md:text-lg">(Patient Record Management)</span>
+          <p class="text-justify text-sm md:text-base mt-2">
+            Developed a comprehensive Hospital Management System using Python with a 
+            graphical user interface (GUI) to streamline hospital operations, 
+            enhance patient care, and improve administrative efficiency
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              Python
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              GUI
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              MySQL
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-[80px] items-center mt-12 sm:mt-20 relative">
+        <div class="w-full order-2 sm:order-1">
+          <h3 class="text-[#5be1f9] font-bold text-2xl md:text-4xl">Supermarket Billing System</h3>
+          <span class="text-[#5be1f9] text-base md:text-lg">(Management of products and customers)</span>
+          <p class="text-justify text-sm md:text-base mt-2">
+            	A thorough Supermarket Billing Management System was created in C++ to optimize customer satisfaction, 
+            expedite the billing procedure, and boost operational effectiveness.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              C++
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+             File Management
+            </li>
+           
+          </ul>
+        </div>
+        <a href="#" class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+          <img
+            class="max-w-[400px] w-full ml-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./icons/projectimages/Supermarket.webp"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative">
+        <a href="#" 
+        class="flex w-full relative justify-center sm:justify-start">
+          <img
+            class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./icons/projectimages/ToDoList.webp"
+            alt=""
+          />
+        </a>
+        <div class="w-full">
+          <h3 class="text-[#ad65e7] font-bold text-2xl md:text-4xl">To Do List WebApp</h3>
+          <span class="text-[#ad65e7] text-base md:text-lg">(Manage Tasks)</span>
+          <p class="text-justify text-sm md:text-base mt-2">
+             Built features for adding, editing, deleting, and marking tasks as complete, 
+            providing users with a simple and effective task management tool.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              HTML
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              CSS
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              JavaScript
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-[80px] items-center mt-12 sm:mt-20 relative">
+        <div class="w-full order-2 sm:order-1">
+          <h3 class="text-[#60f8bb] font-bold text-2xl md:text-4xl">Housing Rates Data Analysis</h3>
+          <span class="text-[#60f8bb] text-base md:text-lg">(House Rates Analysis)</span>
+          <p class="text-justify text-sm md:text-base mt-2">
+            	Handled missing data, outlier detection, and normalization while cleaning and pre-processing sizable housing price datasets. 
+	            EDA is incorporated to find patterns, correlations, and trends in the pricing of homes in various locations. 
+	            Utilized statistical techniques to examine variables such location, property size, and economic indicators that affect home prices. 
+	            To share insights and encourage data-driven decision-making, produced educational graphics using programs like Matplotlib
+
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]  text-sm md:text-base">
+              Pandas
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]  text-sm md:text-base">
+             NumPy
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]  text-sm md:text-base">
+             Matplotlib
+             </li>
+             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]  text-sm md:text-base">
+              Seaborn
+             </li>
+             <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px]  text-sm md:text-base">
+              SkLearn
+             </li>
+           
+          </ul>
+        </div>
+        <a href="#" class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start ">
+          <img
+            class="max-w-[400px] w-full ml-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+            src="./icons/projectimages/HousePriceAnalysis.webp"
+            alt=""
+          />
+        </a>
+      </div>
+
+    </section>
+<!-- -----------------------SKILLS PAGE----------------------------------------------->
+    <section class="max-w-screen-xl mx-auto pb-12">
+      <h2
+        class="text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md"
+      >
+        Internships
+      </h2>
+      <div class="swiper mySwiper !py-14">
+        <div class="swiper-wrapper items-center">
+          <div class="swiper-slide px-4">
+            <div
+              class="flex flex-col md:flex-row w-full md:max-w-[800px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab"
+            >
+              <img
+                class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full ]"
+                src="./icons/projectimages/IBM.webp"
+                alt="IBM"
+              />
+              <div
+                class="testimonial-text ml-6 text-left pt-3 md:pt-2 relative"
+              >
+              <h2
+                  class="text-left text-[#459bd5] font-bold text-2xl md:text-4xl"
+                >
+                 Front End Developer
+                </h2>
+                <ul class="flex flex-wrap gap-2 mt-2">
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    HTML
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    CSS
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    JavaScript
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    Github           
+                  </li>
+                </ul>
+                <p class="text-sm md:text-base mb-2">
+                  Designed a website Named "HEALTH LINE" which is based on sustainable topic Health. 
+                  This website incorporate APIs like BMI calculator and Nutrition value calculator. 
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide px-4">
+            <div
+              class="flex flex-col md:flex-row max-w-[800px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab"
+            >
+              <img
+                class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full"
+                src="./icons/projectimages/CodeClause.webp"
+                alt="CodeClause"
+              />
+              <div
+                class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
+              >
+              <h2
+                  class="text-left text-[#459bd5] font-bold text-2xl md:text-4xl"
+                >Python Developer
+                </h2>
+                <ul class="flex flex-wrap gap-2 mt-2">
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    Python
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    Tkinter
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    Pycharm
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    Github           
+                  </li>
+                </ul>
+                <p class="text-sm md:text-base mb-2">
+                  Worked on three different projects namely 
+                  GUI Calculator using Tkinter Library of python, 
+                  Random Password generator using Random library of Python and GUI supported alarm clock
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide px-4">
+            <div
+              class="flex flex-col md:flex-row max-w-[800px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab"
+            >
+              <img
+                class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full"
+                src="./icons/projectimages/Octanet.webp"
+                alt="Octanet"
+              />
+              <div
+                class=" testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
+              >
+              <h2
+                  class="text-left text-[#459bd5] font-bold text-2xl md:text-4xl"
+                >Front End Developer
+                </h2>
+                <ul class="flex flex-wrap gap-2 mt-2">
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    HTML
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    CSS
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    JavaScript
+                  </li>
+                  <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                    Github           
+                  </li>
+                </ul>
+                <p class="text-sm md:text-base mb-2">
+                  Worked on three different projects namely 
+                  Weather app, To-do list and News App</p>    
+                </div>
+              </div>
+           </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+ 
+<!-- ----------------------Contact Us------------------------------------------->
+<section class="max-w-screen-xl mx-auto px-4 pb-12">
+  <h2
+    class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md"
+  >
+    Let's Connect
+  </h2>
+  <div class="flex flex-col md:flex-row items-center mt-10">
+    <div class="w-full">
+      <img src="./icons/projectimages/contact-me.svg" alt="phone" />
+    </div>
+    <form class="w-full" name="contactUS" netlify>
+      <label
+        for="name"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Name</label
+      >
+      <div class="relative mb-4">
+        <div
+          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+        >
+          <svg
+            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"
+            />
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+          placeholder="Enter your name"
+        />
+      </div>
+      <label
+        for="email"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Your Email</label
+      >
+      <div class="relative mb-4">
+        <div
+          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+        >
+          <svg
+            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 16"
+          >
+            <path
+              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+            />
+            <path
+              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+            />
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+          placeholder="name@procodrr.com"
+        />
+      </div>
+      <label
+        for="message"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Message</label
+      >
+      <div class="relative mb-4">
+        <div
+          class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+        ></div>
+        <textarea
+          id="message"
+          name="message"
+          rows="8"
+          class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+
+  <footer class="flex flex-col items-center pb-0">
+    <p class="text-xs text-gray-300">Anupama © 2025</p>
+    <div class="black-logo ">
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 406 368"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+          stroke="#1F2667"
+          stroke-opacity="0.9"
+          stroke-width="16"
+        ></path>
+        <path
+          d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+          stroke="url(#paint0_linear)"
+          stroke-width="16"
+        ></path>
+        <defs>
+          <linearGradient
+            id="paint0_linear"
+            x1="205.549"
+            y1="20.0169"
+            x2="204.338"
+            y2="342.461"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#1595B6"></stop>
+            <stop offset="1" stop-color="#1595B6" stop-opacity="0"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
+      <li>
+        <a href="https://www.linkedin.com/in/anupama-rawat-980818242/" target="_blank">
+          <svg
+            class="w-5 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            ></path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:anupamarawat2002@gmail.com" target="_blank">
+          <svg
+            class="w-5 hover:text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+            ></path>
+          </svg>
+        </a>
+      </li>
+      
+    </ul>
+  </footer>
+</section>
+         <!-- Swiper JS --> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
